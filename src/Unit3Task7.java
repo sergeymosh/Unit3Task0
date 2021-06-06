@@ -19,7 +19,7 @@ public class Unit3Task7 {
 
 
         }
-        System.out.println("максимальный элемент - "+max);
-        System.out.println("индекс маскимального элемента - "+index);
+        System.out.println("максимальный элемент - "+ max);
+        System.out.println("индекс маскимального элемента - "+ index);
     }
 }
