@@ -1,25 +1,25 @@
 import java.util.Random;
 
-public class ArrayMinMaxExample {
+public class Unit3Task7 {
     public static void main(String[] args) {
-        int arr[] = new int[10];
         Random random = new Random();
+        int[] arr = new int[12];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(10);
+            arr[i] = random.nextInt(15);
             System.out.print(arr[i] + " ");
         }
-        int min = arr[0];
+        System.out.println();
         int max = arr[0];
+        int index=0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
+                index = i;
             }
-            if (arr[i] < min) {
-                min = arr[i];
-            }
+
+
         }
-        System.out.println();
-        System.out.println(min);
-        System.out.println(max);
+        System.out.println("максимальный элемент - "+ max);
+        System.out.println("индекс маскимального элемента - "+ index);
     }
 }
